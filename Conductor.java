@@ -7,10 +7,12 @@ public class Conductor {
         this.nombre = nombre;
         this.licencia = licencia;
     }
-    //Constructor vacio
-    public Conductor(){
+
+    // Constructor vacio
+    public Conductor() {
     }
-    // Getters 
+
+    // Getters
     public String getNombre() {
         return nombre;
     }
@@ -27,6 +29,10 @@ public class Conductor {
     public void setLicencia(String licencia) {
         this.licencia = licencia;
     }
-    
-}
 
+    // METODOS
+    public boolean buscarNombre(String nombreBuscar) {
+        return this.nombre == nombreBuscar;
+    }
+
+}
